@@ -1,0 +1,118 @@
+
+/**FLEXBOX RELATED STYLES*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/**GRID UTILITIES*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+/** CARD UTILITIES**/
+.card{
+    background-color: white;
+    padding:40px;
+    color:black;
+    margin:10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+/**btn utilities***/
+.btn{
+    padding:10px 30px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    cursor: pointer;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.btn-outline{
+    background-color: transparent;
+    border:1px solid white;
+}
+
+
+/* TEXT CENTER UTILITIES**/
+.text-center{
+    text-align: center;
+}
+
+/**MARGIN UTILITIES*/
+.my-1{ margin:1rem 0;}
+.my-2{ margin:1.5rem 0;}
+.my-4{ margin:2rem 0;}
+.my-3{ margin:3rem 0;}
+.my-5{ margin:4rem 0;}
+
+.m-1{ margin:1rem;}
+.m-2{ margin:1rem;}
+.m-4{ margin:2rem;}
+.m-3{ margin:3rem;}
+.m-5{ margin:4rem;}
+
+/**PADDING UTILITIES*/
+.py-1{ padding:1rem 0;}
+.py-2{ padding:1.5rem 0;}
+.py-4{ padding:2rem 0;}
+.py-3{ padding:3rem 0;}
+.py-5{ padding:4rem 0;}
+
+.p-1{ padding:1rem;}
+.p-2{ padding:1rem;}    
+.p-4{ padding:2rem;}
+.p-3{ padding:3rem;}
+.p-5{ padding:4rem;}
+
+/**ALERT STYLES**/
+
+.alert{
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    font-weight: bold;
+    margin:15px 0px;
+}
+.alert i{
+    margin-right: 10px;
+}
+code,pre{
+    background-color: black;
+    color: white;
+    padding:10px;
+}
+
+/**ANIMATION **/
+@keyframes SlideFromRight{
+    0% {   transform: translateX(100%);    }
+    100% {   transform: translateX(0);    }
+}
+
+@keyframes SlideFromLeft{
+    0% {   transform: translateX(-100%);    }
+    100% {   transform: translateX(0);    }
+}
+
+@keyframes SlideFromTop{
+    0% {   transform: translateY(-100%);    }
+    100% {   transform: translateY(0);    }
+}
+@keyframes SlideFromBottom{
+    0% {   transform: translateY(100%);    }
+    100% {   transform: translateY(0);    }
+}

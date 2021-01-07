@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+/** GENERAL STYLES*/
+:root {
+    --primary-color:#047aed;
+    --primary-text-color:#fff;
+    --footer-color:#2e3338;
+}
+* {
+box-sizing:border-box ;
+margin:0;
+padding: 0;
+}
+
+body{    
+font-family: 'Lato', sans-serif;
+color:#333;
+line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    margin:10px 0px;
+
+}
+p{
+    margin:10px 0px;
+}
+
+/* NAVBAR RELATED STYLES */
+.navbar{
+    background-color: var(--primary-color);
+    height: 70px;
+    color:var(--primary-text-color);
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color:var(--primary-text-color);
+    padding:10px;
+    margin:0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px solid var(--primary-text-color);
+}
+.container{
+    max-width: 1100px;
+    padding:0 40px;
+    overflow: auto;
+    margin:0 auto;
+    width: 100%;
+}
+
+/*SHOWCASE RELATED STYLES**/
+.showcase{
+    background-color: var(--primary-color);
+    color:var(--primary-text-color);
+    height: 400px;
+    position: relative;
+}
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap:40px;
+    overflow: visible;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase-text{
+    animation: SlideFromLeft 1s ease-in;
+}
+.showcase-form{
+    height: 350px;
+    position: relative;
+    top:65px;
+    width: 400px;
+    padding:40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: SlideFromRight 1s ease-in;
+}
+.showcase p{
+margin:20px 0;
+}
+.showcase::before,.showcase::after{
+    content:'';
+    position: absolute;
+    bottom:-70px;
+    left:0;
+    right:0;
+    background-color: white;
+    z-index: 10;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    height: 100px;
+}
+
+/**SHOWCASW FORM RELATED STYLES**/
+.showcase-form .form-control{
+    margin:20px 0;
+}
+
+.showcase-form input[type='text']{
+    border:0;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding:3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline:none;
+}
+
+/**STATISTICAL STYLES**/
+.statistical{
+    padding-top: 100px;
+    animation: SlideFromBottom 1s ease-in;
+}
+.statistical .grid h3{
+    font-size: 35px;
+}
+
+.statistical .grid p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.stats-heading-text{
+    max-width: 500px;
+    margin:auto;
+}
+
+/**CLI SECTION STYLES**/
+.cli-section .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.cli-section .grid > *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.cli-section .grid img,.cloud-section .container img{
+    /* height: 200px; */
+    width: 100%;
+}
+.cloud-section {
+    background-color: var(--primary-color);
+    padding:40px 0px;
+    /* height: 300px;    */
+}
+.Slogan{
+    font-size: 35px;
+    color:white;
+}
+.lead-slogan{
+    font-size: 20px;
+    color:white;
+}
+
+/**LANGUAGE RELATED STYLES*/
+.card h4{
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+.languages .container .card {
+padding:20px;
+transition: transform 0.3s ease-in;
+}
+.languages .container .card:hover{
+    transform: translateY(-30px);
+}
+.languages .container{
+    overflow: visible;
+}
+.languages h2{
+    font-size: 40px;
+}
+.languages .flex{
+    flex-wrap: wrap;
+}
+
+.languages{
+    padding:30px 0px;
+}
+/**FOOTER RELATED STYLES**/
+.footer{
+    background-color: var(--footer-color);
+    color:white;
+    padding:40px 0px;
+}
+.footer .social-section i
+{margin:0 10px;}
+.footer a{
+    color:white;
+}
+
+
+/**FEATURES PAGE STYLES***/
+.feature-head,.doc-header{    
+background-color: var(--primary-color);
+color: white;
+padding: 40px 0px;
+}
+.feature-head .container img{
+    height: 200px;
+    justify-self: flex-end;
+}
+.feature-sub-head .container img{
+    height: 300px;
+    justify-self: flex-end;
+}
+.feature-sub-head{
+        padding: 40px 0px;
+}
+
+.feature-sub-head h1,.feature-head h1{
+    font-size: 45px;
+}
+.feature-main-head .card > i{
+    margin-right: 30px;
+}
+
+
+/**DOCUMENT RELATED STYELS**/
+.doc-header{
+    padding:40px 10px;
+}
+.doc-header img{
+    height: 250px;    
+}
+.doc-header .container p{ font-size: 25px;}
+.doc-header .container h1{ font-size: 45px;}
+.doc-main .container >.card:first-child{
+    background-color: #756c6c26;
+    color: black;
+}
+.installation h2{
+    margin:10px 0px;    
+}
+.doc-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+.doc-main nav li{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    color: white;
+}
+.doc-main a:hover{
+    font-weight: bolder;
+}
+/**MEDIA QUERIES**/
+/**MOBILES**/
+@media (max-width:500px){
+.navbar {height: 150px; flex-direction: column;}
+.navbar .flex { flex-direction: column; justify-content: center;}
+.navbar ul {background-color: rgba(0,0,0,0.1); padding:10px;}
+
+.cli-section .grid > *:first-child{
+    grid-column: 1;
+    grid-row: 1 ;
+}
+.feature-head,.feature-main-head,.feature-sub-head,.doc-header,.doc-main{
+    text-align: center;
+}
+.feature-head .container img,.feature-main-head .container img,.feature-sub-head .container img,.doc-header .container img,.doc-main .container img{
+    justify-self: center;
+}
+.doc-main .grid{
+grid-template-columns: 1fr;
+}
+}
+
+
+
+
+
+/**TABLETYS**/
+@media (max-width:768px){
+    .grid,
+    .showcase .grid,
+    .cli-section .grid,
+    .statistical .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{height: auto;}
+    .showcase-text{text-align: center;}
+    .showcase-form{justify-self: center; margin:auto}
+    
+    .cli-section .grid > *:first-child{
+        grid-column: 1;
+        grid-row: 1 ;
+    }
+    .doc-main .grid{
+        grid-template-columns: 1fr;
+        }
+        
+.feature-head .container img,.feature-main-head .container img,.feature-sub-head .container img,.doc-header .container img,.doc-main .container img{
+    justify-self: center;
+}
+    
+}
