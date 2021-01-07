@@ -28,7 +28,7 @@ Clone or Download the code
 ## Usage 
 
 Choice-1 :
-Checkout the live  version :-
+Checkout the live  version :- https://trusting-wing-4715c8.netlify.app/
 
 Choice-2 : Experience the CloudIT's responsiveness using Live Server package (available in Visual Studio Code Editor)
 ```python
